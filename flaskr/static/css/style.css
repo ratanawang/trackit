@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
+:root {
+  --background: #03727d;
+}
+
 html {
   font-family: sans-serif;
   background: #eee;
@@ -28,10 +32,21 @@ hr {
 }
 
 nav {
-  background: lightgray;
+  background: var(--background);
+  top: 100%;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
+}
+
+nav a {
+  color: #ebfffe;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: opacity 150ms ease-in-out;
 }
 
 nav h1 {
