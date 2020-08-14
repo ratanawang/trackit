@@ -1,5 +1,8 @@
 **/.DS_Store
-.idea/
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.ides/tasks.xml
+.idea/shelf
 __pycache__
 credentials.json
 
