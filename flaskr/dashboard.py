@@ -20,6 +20,11 @@ def index():
     return render_template("dashboard/test.html", posts=posts)
 
 
+@bp.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 @bp.route("/create", methods=("GET", "POST"))
 @login_required
 def create():
