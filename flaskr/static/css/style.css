@@ -23,8 +23,7 @@ header {
   text-align: center;
   z-index: 999;
   width: 100%;
-  position: sticky;
-  top: 0;
+  height: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -210,11 +209,19 @@ nav a {
     color: #ebfffe;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 30px;
-    margin: 0 auto 0 auto;
-    position: absolute;
-    width: 100%;
+    margin-right: 240px;
+    width: 150px;
     text-align: center;
     text-transform: lowercase;
+    position: relative;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   nav {
