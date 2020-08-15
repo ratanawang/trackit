@@ -18,9 +18,9 @@
   </nav>
 </header>
 <section class="content">
-  <h1>
+  <h2>
     {% block header %}{% endblock %}
-  </h1>
+  </h2>
   {% for message in get_flashed_messages() %}
     <div class="flash">{{ message }}</div>
   {% endfor %}
