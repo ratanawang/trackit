@@ -12,19 +12,35 @@ body {
     height: 86%;
     margin: auto;
 }
-.container .box
+
+.container .big_box
 {
     position: relative;
-    width: 30%;
-    height: 100%;
-    background: #ffffff;
-    float: left;
-    margin: 1.6%;
+    left: 7.5%;
+    margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    float: left;
 }
+.container .big_box .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(325px - 30px);
+    background: #ffffff;
+    top: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
 
+}
+.container .big_box .background
+{
+    background: #fff;
+    width: calc(800px - 30px);
+    height: calc(650px - 30px);
+}
 .container .box .icon
 {
     position: absolute;
@@ -52,7 +68,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    transition: 0.5s;
+    transitionL 0.5s;
     color: #0d3b4d;
 }
 .container .box:hover .icon .fa
@@ -65,8 +81,7 @@ body {
     top: 100%;
     height: calc(100% - 100%);
     text-align: center;
-    margin: auto;
-    padding: 0;
+    padding: auto;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
@@ -76,20 +91,62 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container .box .container h3
+
+.container .big_box .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9ee4ff;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .big_box:hover .icon
+{
+    top: 20px;
+    right: calc(50% - 40px);
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .big_box .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transitionL 0.5s;
+    color: #0d3b4d;
+}
+.container .big_box:hover .icon .fa
+{
+    font-size: 40px;
+}
+.container .big_box .content
+{
+    position: relative;
+    top: 100%;
+    height: calc(100% - 100%);
+    text-align: center;
+    padding: auto;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .big_box:hover .content
+{
+    top: 100px;
+    opacity: 1;
+}
+
+h3
 {
     margin: auto;
-    padding: 0;
+    padding: auto;
     color:#000;
     font-size: 24px;
-}
-textarea
-{
-    margin: auto;
-    padding: 0;
-    color:#000;
-    width: 300px;
-    height: 425px;
-    resize: none;
-    border: none;
 }
