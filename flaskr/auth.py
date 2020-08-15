@@ -66,7 +66,9 @@ def login():
             return redirect(url_for('index'))
 
         flash(error)
-
+        print(error)
+        print(email)
+        print(password)
     return render_template('auth/login.html')
 
 
