@@ -12,12 +12,12 @@ html {
 
 body {
   position: relative;
-	min-height: 100vh;
-	display: flex;
-	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
