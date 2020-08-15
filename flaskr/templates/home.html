@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<script src="home.js"></script>
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
 <div class="container">
     <div class="welcome_container">
             <div class="welcome-text">
@@ -43,15 +43,17 @@
               <div class="icon"><i class="fa fa-check-square" aria-hidden="true"></i></div>
               <div class="content">
                   <h3>To-do</h3>
-                  <textarea readonlyvstyle>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper</textarea>
+                  <textarea readonly>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper
+                  </textarea>
               </div>
           </div>
          <div class="box">
               <div class="icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
               <div class="content">
                   <h3>Mood</h3>
-                  <textarea readonlyvstyle>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper.
+                  <textarea readonly>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper.
                   </textarea>
               </div>
           </div>
@@ -59,7 +61,8 @@
               <div class="icon"><i class="fa fa-tint" aria-hidden="true"></i></div>
               <div class="content">
                   <h3>Water</h3>
-                  <textarea readonlyvstyle>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper.
+                  <textarea readonly>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam augue, consectetur a nisi ac, vestibulum accumsan nibh. Proin dictum facilisis ullamcorper.
                   </textarea>
               </div>
           </div>
