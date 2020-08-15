@@ -132,3 +132,29 @@ input::-moz-focus-inner {
 #submit:active {
   color: #d0d0d2;
 }
+
+#mdiv {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #e2e2e5;
+  top: 25px;
+  right: 25px;
+}
+
+.mdiv {
+  height: 30px;
+  width: 3px;
+  margin-left: 12px;
+  background-color: #8f8f8f;
+  transform: rotate(45deg);
+  Z-index: 1;
+}
+
+.md {
+  height: 30px;
+  width: 3px;
+  background-color: #8f8f8f;
+  transform: rotate(90deg);
+  Z-index: 2;
+}
