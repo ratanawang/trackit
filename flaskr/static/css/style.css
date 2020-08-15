@@ -186,6 +186,7 @@ nav a:hover {
 
 .content {
     margin-top: 60px;
+    margin-left: 10px;
     padding: 0 1rem 1rem;
 }
 
@@ -197,7 +198,6 @@ nav a:hover {
 
 .content > header h1 {
   flex: auto;
-  margin: 50px 0 1rem 0;
 }
 
 .flash {
