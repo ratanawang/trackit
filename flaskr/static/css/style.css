@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+
 :root {
   --background: #03727d;
 }
@@ -131,6 +133,8 @@ nav a:hover {
   .logo {
     grid-column: 1 / 3;
     color: #ebfffe;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
   }
 
   nav {
@@ -154,6 +158,7 @@ nav a:hover {
 
   nav ul {
     display: flex;
+    margin-right: -150px;
   }
 
   nav li {
