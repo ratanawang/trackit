@@ -24,6 +24,8 @@ header {
   position: relative;
   z-index: 999;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
