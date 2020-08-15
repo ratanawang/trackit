@@ -5,7 +5,7 @@
   <nav>
     <h1 class="logo">trackit</h1>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>
       <li><a href="#">Contact</a></li>
       {% if g.user %}
           <li><span>{{ g.user['username'] }}</span>

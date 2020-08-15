@@ -185,7 +185,8 @@ nav a:hover {
 }
 
 .content {
-  padding: 0 1rem 1rem;
+    margin-top: 60px;
+    padding: 0 1rem 1rem;
 }
 
 .content > header {
