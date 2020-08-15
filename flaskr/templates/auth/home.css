@@ -41,15 +41,15 @@ body
 .welcome-text h1
 {
     position: center;
-    margin-left: 50hv;
+    margin-left: 50vh;
     color: #fff;
-    text-formation: uppercase;
+    text-transform: uppercase;
     font-size: 60px;
 }
 .welcome-text a
 {
   color: #fff;
-  position: bottom;
+  position: relative;
   margin-top: 400px;
   z-index: 2;
   display: inline-block;
@@ -62,14 +62,14 @@ body
 }
 .welcome-text a:hover
 {
-    margin-left: 50hv;
+    margin-left: 50vh;
     color: #fff;
     opacity: .5;
 }
 
 #section04 a {
   padding-top: 60px;
-  margin-left: 50hv;
+  margin-left: 50vh;
 }
 #section04 a span
 {
@@ -108,18 +108,14 @@ body
   }
 }
 
-
-
-
 /*3 boxes starts here*/
 .intro_container h1
 {
     text-align: center;
     color: #9ee4ff;
     font-size: 60px;
-    margin: 0px;
+    margin: 0;
     padding-top: 100px;
-
 }
 
 .intro_container .box
@@ -163,7 +159,7 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    transitionL 0.5s;
+    transition: 0.5s;
     color: #0d3b4d;
 }
 .container .box:hover .icon .fa
@@ -176,7 +172,7 @@ body
     top: 100%;
     height: calc(100% - 100%);
     text-align: center;
-    padding: auto;
+    padding: initial;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
@@ -191,7 +187,7 @@ body
 h3
 {
     margin: auto;
-    padding: auto;
+    padding: initial;
     color:#000;
     font-size: 24px;
 }

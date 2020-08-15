@@ -29,7 +29,7 @@ body {
     width: calc(400px - 30px);
     height: calc(325px - 30px);
     background: #ffffff;
-    top: 0%;
+    top: 0;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
@@ -68,7 +68,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    transitionL 0.5s;
+    transition: 0.5s;
     color: #0d3b4d;
 }
 .container .box:hover .icon .fa
@@ -81,7 +81,7 @@ body {
     top: 100%;
     height: calc(100% - 100%);
     text-align: center;
-    padding: auto;
+    padding: initial;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
@@ -119,7 +119,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    transitionL 0.5s;
+    transition: 0.5s;
     color: #0d3b4d;
 }
 .container .big_box:hover .icon .fa
@@ -132,7 +132,7 @@ body {
     top: 100%;
     height: calc(100% - 100%);
     text-align: center;
-    padding: auto;
+    padding: initial;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
@@ -146,7 +146,7 @@ body {
 h3
 {
     margin: auto;
-    padding: auto;
+    padding: initial;
     color:#000;
     font-size: 24px;
 }
