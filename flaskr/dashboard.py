@@ -11,6 +11,11 @@ bp = Blueprint("dashboard", __name__)
 
 @bp.route("/")
 def index():
+    return render_template("home.html")
+
+
+@bp.route("/dashboard")
+def dashboard():
     db = get_db()
     posts = db.execute(
         "SELECT p.id, title, body, created, author_id, email"

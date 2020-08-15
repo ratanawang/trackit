@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <script src="home.js"></script>
@@ -17,6 +18,25 @@
             </div>
     </div>
 
+<<header>
+  <nav>
+
+    <ul>
+{#      <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>#}
+      <li><a href="contact">Contact</a></li>
+      {% if g.user %}
+        <a class="logo" href="dashboard">trackit</a>
+
+{#          <li><a>{{ g.user['email'] }}</a></li>#}
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+      {% else %}
+          <a class="logo" href="{{ url_for('dashboard.index') }}">trackit</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
+          <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>
     <div class="intro_container">
         <section id="intro"> <h1>trackit</h1>
           <div class="box">
