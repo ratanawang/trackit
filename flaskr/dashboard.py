@@ -8,6 +8,8 @@ from flaskr.db import get_db
 
 bp = Blueprint("dashboard", __name__)
 
+global water
+water = 0
 
 @bp.route("/")
 def index():
@@ -22,7 +24,7 @@ def dashboard():
         " FROM post p JOIN user u ON p.author_id = u.id"
         " ORDER BY created DESC"
     ).fetchall()
-    return render_template("dashboard/test.html", posts=posts)
+    return render_template("dashboard/test.html", posts=posts, water=water)
 
 
 @bp.route("/contact")
