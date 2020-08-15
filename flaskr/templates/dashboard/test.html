@@ -17,7 +17,7 @@
       <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>
       <li><a href="contact">Contact</a></li>
       {% if g.user %}
-          <li>{{ g.user['email'] }}</li>
+          <li><a>{{ g.user['email'] }}</a></li>
           <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
       {% else %}
           <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
