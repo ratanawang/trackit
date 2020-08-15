@@ -21,7 +21,6 @@ body {
 header {
   background: #03727d;
   text-align: center;
-  position: relative;
   z-index: 999;
   width: 100%;
   position: sticky;
