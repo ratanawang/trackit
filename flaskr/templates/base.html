@@ -8,7 +8,7 @@
       <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>
       <li><a href="#">Contact</a></li>
       {% if g.user %}
-          <li><span>{{ g.user['username'] }}</span>
+          <li><span>{{ g.user['email'] }}</span>
           <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
       {% else %}
           <li><a href="{{ url_for('auth.login') }}">Log In</a>
