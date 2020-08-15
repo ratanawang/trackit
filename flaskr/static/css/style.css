@@ -9,7 +9,7 @@ html {
 
 body {
   top: 0;
-  position: fixed;
+  position: relative;
   min-height: 100%;
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ body {
 header {
   background: #03727d;
   text-align: center;
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
 }
@@ -38,9 +38,8 @@ hr {
 }
 
 .content {
-    margin-top: 60px;
-    margin-left: auto;
-    padding: 0;
+    margin-top: 20px;
+    padding: 0px 70px 0px 70px;
     position: relative;
 }
 
@@ -119,13 +118,14 @@ input[type=submit] {
 }
 
 /* Nav bar code */
+/*
 .nav-toggle {
   position: fixed;
   right: 20px;
   top: -9999px !important;
   left: -9999px !important;
 }
-
+/*
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px solid rgba(104, 224, 237, .75);
 }
@@ -163,16 +163,16 @@ input[type=submit] {
 
 .nav-toggle-label span::after {
   top: 7px;
-}
+} */
 
 nav {
   background: #03727d;
   top: 100%;
   left: 0;
   width: 100%;
-  display: flex;
+  display: block;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0;
 }
 
 nav a {
@@ -183,11 +183,7 @@ nav a {
   transition: opacity 150ms ease-in-out;
   font-family: 'Josefin Sans', sans-serif;
 }
-
-nav a:hover {
-  color: #ebfffe;
-}
-
+/*
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
 }
@@ -196,11 +192,12 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
+ */
 
 @media screen and (min-width: 800px) {
-  .nav-toggle-label {
+  /*.nav-toggle-label {
     display: none;
-  }
+  } */
 
   header {
     display: grid;
@@ -222,7 +219,7 @@ nav a:hover {
   nav {
     // all: unset; /* this causes issues with Edge, since it's unsupported */
 
-    /* the following lines are not from my video, but add Edge support */
+    /* add Edge support */
     position: relative;
     text-align: left;
     transition: none;
@@ -242,12 +239,11 @@ nav a:hover {
     display: flex;
     margin-right: -240px;
     list-style-type: none;
-    padding: 0;
   }
 
   nav li {
     margin-left: 2em;
-    margin-bottom: 0;
+    margin-bottom: auto;
   }
 
   nav a {
