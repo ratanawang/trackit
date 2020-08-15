@@ -8,19 +8,19 @@ body {
 .container
 {
     position: relative;
-    top: 100px;
-    width: 1200px;
-    height: 650px;
+    top: 200px;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 .container .box
 {
     position: relative;
-    width: calc(400px - 30px);
-    height: calc(650px - 30px);
+    width: 30%;
+    height: 100%;
     background: #ffffff;
     float: left;
-    margin: 15px;
+    margin: 1.6%;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
