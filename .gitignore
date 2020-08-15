@@ -4,6 +4,7 @@
 .ides/tasks.xml
 .idea/shelf
 __pycache__
+flaskr/__pycache__/
 credentials.json
 
 # Byte-compiled / optimized / DLL files
