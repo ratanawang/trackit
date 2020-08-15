@@ -1,53 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-html
-{
+
+html {
     scroll-behavior: smooth;
 }
-body
-{
+body {
     font-family: 'Work Sans', sans-serif;
     overflow: auto;
 }
-.container
-{
+
+.container {
     width: 100%;
     height: 100%;
     scroll-behavior:smooth;
 }
-.welcome_container
-{
+
+.welcome_container {
     background: url("https://cdn.discordapp.com/attachments/743573756911288384/744243836783427594/sea.jpg");
     height: 100vh;
     -webkit-background-size:cover;
     background-size:cover;
     background-position: center center;
     position: relative;
+    margin-top: -70px;
 }
-.intro_container
-{
+
+.intro_container {
     position: center;
     width: 100%;
     height: 100vh;
     background: #0d3b4d;
 }
-.welcome-text
-{
+
+.welcome-text {
     position: absolute;
     width: 600px;
     height: 300px;
     margin: 10% 30%;
     text-align: center;
 }
-.welcome-text h1
-{
+
+.welcome-text h1 {
     position: center;
     margin-left: 50vh;
     color: #fff;
     text-transform: uppercase;
     font-size: 60px;
 }
-.welcome-text a
-{
+
+.welcome-text a {
   color: #fff;
   position: relative;
   margin-top: 400px;
@@ -60,8 +60,8 @@ body
   text-decoration: none;
   transition: opacity .3s;
 }
-.welcome-text a:hover
-{
+
+.welcome-text a:hover {
     margin-left: 50vh;
     color: #fff;
     opacity: .5;
@@ -71,8 +71,8 @@ body
   padding-top: 60px;
   margin-left: 50vh;
 }
-#section04 a span
-{
+
+#section04 a span {
   position: absolute;
   top: 0;
   width: 24px;
@@ -85,6 +85,7 @@ body
   animation: sdb04 2s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb04 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -96,6 +97,7 @@ body
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
+
 @keyframes sdb04 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
@@ -109,8 +111,7 @@ body
 }
 
 /*3 boxes starts here*/
-.intro_container h1
-{
+.intro_container h1 {
     text-align: center;
     color: #9ee4ff;
     font-size: 60px;
@@ -118,8 +119,7 @@ body
     padding-top: 100px;
 }
 
-.intro_container .box
-{
+.intro_container .box {
     position: relative;
     margin: 15px;
     left: 5%;
@@ -132,8 +132,8 @@ body
     width: calc(400px - 30px);
     height: calc(300px - 30px);
 }
-.container .box .icon
-{
+
+.container .box .icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,8 +143,8 @@ body
     transition: 0.5s;
     z-index: 1;
 }
-.container .box:hover .icon
-{
+
+.container .box:hover .icon {
     top: 20px;
     right: calc(50% - 40px);
     left: calc(50% - 40px);
@@ -152,8 +152,8 @@ body
     height: 80px;
     border-radius: 50%;
 }
-.container .box .icon .fa
-{
+
+.container .box .icon .fa {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -162,12 +162,12 @@ body
     transition: 0.5s;
     color: #0d3b4d;
 }
-.container .box:hover .icon .fa
-{
+
+.container .box:hover .icon .fa {
     font-size: 40px;
 }
-.container .box .content
-{
+
+.container .box .content {
     position: relative;
     top: 100%;
     height: calc(100% - 100%);
@@ -177,22 +177,20 @@ body
     transition: 0.5s;
     opacity: 0;
 }
-.container .box:hover .content
-{
+
+.container .box:hover .content {
     top: 100px;
     opacity: 1;
 }
 
-
-h3
-{
+h3 {
     margin: auto;
     padding: initial;
     color:#000;
     font-size: 24px;
 }
-textarea
-{
+
+textarea {
     width: 325px;
     height: 100px;
     border: none;

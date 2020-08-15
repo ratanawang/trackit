@@ -11,32 +11,29 @@
 <body>
 <script src="{{ url_for('static', filename='js/home.js') }}"></script>
 <div class="container">
+    <header>
+      <nav>
+        <a class="logo" href="dashboard">trackit</a>
+        <ul>
+    {#      <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>#}
+          <li><a href="contact">Contact</a></li>
+          {% if g.user %}
+    {#          <li><a>{{ g.user['email'] }}</a></li>#}
+              <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+          {% else %}
+              <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
+              <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
     <div class="welcome_container">
-            <div class="welcome-text">
-                <h1 style="color:#00484f;">Welcome to trackit!</h1>
-                <section id="section04"><a href="#intro"><span></span>Learn more</a></section>
-            </div>
+        <div class="welcome-text">
+            <h1 style="color:#00484f;">Welcome to trackit!</h1>
+            <section id="section04"><a href="#intro"><span></span>Learn more</a></section>
+        </div>
     </div>
 
-<header>
-  <nav>
-
-    <ul>
-{#      <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>#}
-      <li><a href="contact">Contact</a></li>
-      {% if g.user %}
-        <a class="logo" href="dashboard">trackit</a>
-
-{#          <li><a>{{ g.user['email'] }}</a></li>#}
-          <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
-      {% else %}
-          <a class="logo" href="{{ url_for('dashboard.index') }}">trackit</a>
-          <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
-          <li><a href="{{ url_for('auth.register') }}">Register</a></li>
-      {% endif %}
-    </ul>
-  </nav>
-</header>
     <div class="intro_container">
         <section id="intro"> <h1>trackit</h1>
           <div class="box">
@@ -68,7 +65,6 @@
           </div>
         </section>
     </div>
-
 
 </div>
 </body>
