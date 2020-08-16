@@ -21,7 +21,11 @@
 <body>
 <header>
   <nav>
-    <a class="logo" href="{{ url_for('dashboard.index') }}">trackit</a>
+     {% if g.user %}
+     <a class="logo" href="dashboard">trackit</a>
+     {% else %}
+     <a class="logo" href="{{ url_for('dashboard.index') }}">trackit</a>
+     {% endif %}
     <ul>
 {#      <li><a href="{{ url_for('dashboard.index') }}">Home</a></li>#}
       <li><a href="contact">Contact</a></li>

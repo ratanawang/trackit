@@ -31,7 +31,6 @@ def dashboard():
         quote[1] = "Anonymous"
     if request.method == 'POST':
         water += int(request.form.get("extrawater"))
-        print(water)
     return render_template("dashboard/test.html", posts=posts, water=water, quote=quote[0], author = quote[1])
 
 
