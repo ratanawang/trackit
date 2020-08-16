@@ -56,9 +56,11 @@
                   <h3>Water</h3>
                   <p>Recommended amount of water: 4 cups</p>
                   <p>Amount of water drank today: {{water}} cups</p>
-                  <label for="extrawater">Add Water</label>
-                  <input name="extrawater" id="extrawater" type="number" required>
-                  <input type="submit" id="submit" value="Add">
+                  <form action = /dashboard method="POST">
+                      <label for="extrawater">Add Water</label>
+                      <input name="extrawater" id="extrawater" type="number" required>
+                      <input type="submit" id="submit" value="Add">
+                  </form>
               </div>
           </div>
      </div>

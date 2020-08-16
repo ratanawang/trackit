@@ -10,7 +10,6 @@ from flaskr.methods import getQuote
 
 bp = Blueprint("dashboard", __name__)
 
-global water
 water = 0
 
 @bp.route("/")
@@ -18,8 +17,9 @@ def index():
     return render_template("home.html")
 
 
-@bp.route("/dashboard")
+@bp.route("/dashboard", methods=('GET', 'POST'))
 def dashboard():
+    global water
     db = get_db()
     posts = db.execute(
         "SELECT p.id, title, body, created, author_id, email"
@@ -29,6 +29,9 @@ def dashboard():
     quote = getQuote()
     if quote[1] is None:
         quote[1] = "Anonymous"
+    if request.method == 'POST':
+        water += int(request.form.get("extrawater"))
+        print(water)
     return render_template("dashboard/test.html", posts=posts, water=water, quote=quote[0], author = quote[1])
 
 
