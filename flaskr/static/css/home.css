@@ -15,7 +15,7 @@ body {
 }
 
 .welcome_container {
-    background: url("https://cdn.discordapp.com/attachments/743573756911288384/744243836783427594/sea.jpg");
+    background: url("https://www.wallpaperflare.com/static/209/7/582/firewatch-white-black-crew-wallpaper.jpg");
     height: 100vh;
     -webkit-background-size:cover;
     background-size:cover;
@@ -35,16 +35,26 @@ body {
     position: absolute;
     width: 600px;
     height: 300px;
-    margin: 10% 30%;
+    margin: 13% 30%;
     text-align: center;
 }
 
 .welcome-text h1 {
     position: center;
-    margin-left: 50vh;
-    color: #fff;
-    text-transform: uppercase;
     font-size: 60px;
+    color: #0d3b4d;
+    text-transform: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0;
+}
+
+.welcome-text p {
+    position: center;
+    font-size: 25px;
+    color: #0d3b4d;
+    text-transform: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 3px;
 }
 
 .welcome-text a {
@@ -62,14 +72,14 @@ body {
 }
 
 .welcome-text a:hover {
-    margin-left: 50vh;
+    /*margin-left: 50vh;*/
     color: #fff;
     opacity: .5;
 }
 
 #section04 a {
   padding-top: 60px;
-  margin-left: 50vh;
+  /*margin-left: 50vh;*/
 }
 
 #section04 a span {
@@ -196,4 +206,3 @@ textarea {
     border: none;
     resize: none;
 }
-
