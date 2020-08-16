@@ -5,6 +5,8 @@ from werkzeug.exceptions import abort
 
 from flaskr.auth import login_required
 from flaskr.db import get_db
+from flaskr.methods import getQuote
+
 
 bp = Blueprint("dashboard", __name__)
 
@@ -24,7 +26,10 @@ def dashboard():
         " FROM post p JOIN user u ON p.author_id = u.id"
         " ORDER BY created DESC"
     ).fetchall()
-    return render_template("dashboard/test.html", posts=posts, water=water)
+    quote = getQuote()
+    if quote[1] is None:
+        quote[1] = "Anonymous"
+    return render_template("dashboard/test.html", posts=posts, water=water, quote=quote[0], author = quote[1])
 
 
 @bp.route("/contact")
